@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aea457fd-f2b9-4775-91a6-d67e3f8e90e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Entity/EnclosureTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Enclosure.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Security.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Exception/DinosaurAreRunningRampantException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Exception/NotABuffetException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/Service/DinosaurLengthDeterminator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Service/DinosaurLengthDeterminatorTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Dinosaur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Dinosaur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Factory/DinosaurFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Factory/DinosaurFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Factory/DinosaurFactoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Factory/DinosaurFactoryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Entity/EnclosureTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Entity/EnclosureTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +29,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="samedaywms.local.zitec.com" id="1d276d79-f2b8-44be-a107-9fa95f52824d" name="samedaywms.local.zitec.com" port="443" />
+    </servers>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
@@ -71,9 +80,14 @@
   <component name="ProjectId" id="1TsfLtEy6XJDQfDR5O0KkDQayVj" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/AppBundle/Entity" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\learning\code-phpunit\src\AppBundle\Entity" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -118,7 +132,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574426638294</updated>
-      <workItem from="1574426639423" duration="21106000" />
+      <workItem from="1574426639423" duration="39894000" />
     </task>
     <servers />
   </component>
