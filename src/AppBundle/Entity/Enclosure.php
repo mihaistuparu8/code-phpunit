@@ -3,7 +3,6 @@
 
 namespace AppBundle\Entity;
 
-
 use AppBundle\Exception\DinosaurAreRunningRampantException;
 use AppBundle\Exception\NotABuffetException;
 use Doctrine\Common\Collections\ArrayCollection;

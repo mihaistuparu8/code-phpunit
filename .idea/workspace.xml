@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aea457fd-f2b9-4775-91a6-d67e3f8e90e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Enclosure.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Security.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Exception/DinosaurAreRunningRampantException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Exception/NotABuffetException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Service/DinosaurLengthDeterminator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Service/DinosaurLengthDeterminatorTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Dinosaur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Dinosaur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Enclosure.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Enclosure.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Factory/DinosaurFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Factory/DinosaurFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Entity/EnclosureTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Entity/EnclosureTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Entity/DinosaurTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Entity/DinosaurTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Factory/DinosaurFactoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Factory/DinosaurFactoryTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574426638294</updated>
-      <workItem from="1574426639423" duration="39894000" />
+      <workItem from="1574426639423" duration="48309000" />
     </task>
     <servers />
   </component>

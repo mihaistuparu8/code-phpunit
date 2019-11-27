@@ -5,7 +5,7 @@ namespace Tests\AppBundle\Entity;
 use PHPUnit\Framework\TestCase;
 use AppBundle\Entity\Dinosaur;
 
-class DinosaurTest extends  TestCase
+class DinosaurTest extends TestCase
 {
     public function testSettingLength() {
         $dinosaur = new Dinosaur();

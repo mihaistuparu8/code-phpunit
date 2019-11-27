@@ -58,7 +58,6 @@ class DinosaurFactoryTest extends TestCase
             $this->assertGreaterThanOrEqual(Dinosaur::LARGE, $dinosaur->getLength());
         } else {
             $this->assertLessThan(Dinosaur::LARGE, $dinosaur->getLength());
-
         }
 
         $this->assertSame($expectedIsCarnivorous, $dinosaur->isCarnivorous(), 'Diets do not match');
