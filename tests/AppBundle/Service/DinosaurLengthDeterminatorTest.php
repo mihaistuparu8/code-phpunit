@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Tests\Service;
+namespace Tests\AppBundle\Service;
 
 
 use AppBundle\Entity\Dinosaur;

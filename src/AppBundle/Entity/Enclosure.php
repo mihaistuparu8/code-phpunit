@@ -16,6 +16,13 @@ use Doctrine\ORM\Mapping as ORM;
 class Enclosure
 {
     /**
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\Column(type="integer")
+     */
+    private $id;
+
+    /**
      * @var Collection
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Dinosaur", mappedBy="enclosure", cascade={"persist"})
      */
@@ -64,6 +71,11 @@ class Enclosure
         }
 
         return false;
+    }
+
+    public function getSecurities(): Collection
+    {
+        return $this->securities;
     }
 
     public function canAddDinosaur(Dinosaur $dinosaur): bool
