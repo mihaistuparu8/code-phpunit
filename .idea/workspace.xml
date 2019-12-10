@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aea457fd-f2b9-4775-91a6-d67e3f8e90e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AppBundle/Service/EnclosureBuilderService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Service/EnclosureBuilderServiceIntegrationTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Service/EnclosureBuilderServiceProphecyTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Service/EnclosureBuilderServiceTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Resources/views/_partials/_newDinoForm.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadBasicParkData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadSecurityData.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/AppBundle/Controller/DefaultControllerTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/code-phpunit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/code-phpunit.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpunit.result.cache" beforeDir="false" afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config/config_test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config_test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Dinosaur.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Dinosaur.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Enclosure.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Enclosure.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AppBundle/Factory/DinosaurFactoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Factory/DinosaurFactoryTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Service/DinosaurLengthDeterminatorTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AppBundle/Service/DinosaurLengthDeterminatorTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" beforeDir="false" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,12 +112,14 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
       <path value="$PROJECT_DIR$/vendor/liip/functional-test-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/shyim/var-dumper" />
     </include_path>
   </component>
   <component name="ProjectId" id="1TsfLtEy6XJDQfDR5O0KkDQayVj" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../the_spacebar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Resources/views" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
   </component>
@@ -128,6 +128,8 @@
       <recent name="C:\Projects\learning\code-phpunit\tests\AppBundle" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\learning\code-phpunit\app\Resources\views" />
+      <recent name="C:\Projects\learning\code-phpunit\src\AppBundle" />
       <recent name="C:\Projects\learning\code-phpunit\src\AppBundle\Service" />
       <recent name="C:\Projects\learning\code-phpunit\src\AppBundle\Entity" />
     </key>
@@ -179,7 +181,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574426638294</updated>
-      <workItem from="1574426639423" duration="94613000" />
+      <workItem from="1574426639423" duration="107918000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,24 @@
 {% extends 'base.html.twig' %}
-
 {% block body %}
+    {{ include('_partials/_newDinoForm.html.twig') }}
+    <h3>Enclosures</h3>
+    <table class="table-enclosures">
+        <tbody>
+        {% for enclosure in enclosures %}
+            <tr id="enclosure-{{ enclosure.id }}">
+                <td>Enclosure #{{ enclosure.id }}</td>
+                <td>
+                    Contains <strong>{{ enclosure|length }}</strong> dinosaur(s)
+                </td>
+                <td>
+                    {% if enclosure.isSecurityActive %}
+                        Security active!
+                    {% else %}
+                        <button class="button button-alarm">Sound alarm!</button>
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}

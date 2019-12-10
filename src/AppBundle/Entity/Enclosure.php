@@ -1,9 +1,8 @@
 <?php
 
-
 namespace AppBundle\Entity;
 
-use AppBundle\Exception\DinosaurAreRunningRampantException;
+use AppBundle\Exception\DinosaursAreRunningRampantException;
 use AppBundle\Exception\NotABuffetException;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -22,8 +21,7 @@ class Enclosure
      */
     private $id;
 
-    /**
-     * @var Collection
+    /** @var Collection
      * @ORM\OneToMany(targetEntity="AppBundle\Entity\Dinosaur", mappedBy="enclosure", cascade={"persist"})
      */
     private $dinosaurs;
@@ -36,12 +34,17 @@ class Enclosure
 
     public function __construct(bool $withBasicSecurity = false)
     {
-        $this->securities = new ArrayCollection();
         $this->dinosaurs = new ArrayCollection();
+        $this->securities = new ArrayCollection();
 
         if ($withBasicSecurity) {
             $this->addSecurity(new Security('Fence', true, $this));
         }
+    }
+
+    public function getId(): ?int
+    {
+        return $this->id;
     }
 
     public function getDinosaurs(): Collection
@@ -51,15 +54,26 @@ class Enclosure
 
     public function addDinosaur(Dinosaur $dinosaur)
     {
+        if (!$this->isSecurityActive()) {
+            throw new DinosaursAreRunningRampantException('Are you craaazy?!?');
+        }
+
         if (!$this->canAddDinosaur($dinosaur)) {
             throw new NotABuffetException();
         }
 
-        if (!$this->isSecurityActive()) {
-            throw new DinosaurAreRunningRampantException('Are you craaaazy?');
-        }
-
         $this->dinosaurs[] = $dinosaur;
+    }
+
+    public function addSecurity(Security $security)
+    {
+        $this->securities[] = $security;
+    }
+
+    private function canAddDinosaur(Dinosaur $dinosaur): bool
+    {
+        return count($this->dinosaurs) === 0
+            || $this->dinosaurs->first()->isCarnivorous() === $dinosaur->isCarnivorous();
     }
 
     public function isSecurityActive(): bool
@@ -78,13 +92,8 @@ class Enclosure
         return $this->securities;
     }
 
-    public function canAddDinosaur(Dinosaur $dinosaur): bool
+    public function getdinosaurCount(): int
     {
-        return count($this->dinosaurs) === 0 || $this->dinosaurs->first()->isCarnivorous() === $dinosaur->isCarnivorous();
-    }
-
-    public function addSecurity(Security $security)
-    {
-        $this->securities[] = $security;
+        return $this->dinosaurs->count();
     }
 }

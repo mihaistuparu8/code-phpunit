@@ -23,3 +23,6 @@ swiftmailer:
 doctrine:
     dbal:
         url: 'sqlite:///%kernel.project_dir%/var/data/text.sqlite'
+
+liip_functional_test:
+    cache_sqlite_db: true
